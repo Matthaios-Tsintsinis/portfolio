@@ -8,7 +8,7 @@ body {
 
 
 section {
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
 #header {
@@ -156,9 +156,17 @@ section {
     align-items: center;
 }
 
-.hobby {
+.hobbies-container {
     width: 50%;
     margin-bottom: 2rem;
+}
+
+.hobby{
+    margin-bottom: 7rem;
+}
+
+.gamingHobby{
+    margin-bottom: 0 !important;
 }
 
 .hobby-img-coding {
@@ -283,6 +291,45 @@ section {
         text-align: center;
         width: 90%;
     }
+
+    .hobby-img-coding{
+        height: 10rem;
+    }
+
+    .hobby-img-gaming{
+        height: 12rem;
+    }
+}
+
+
+@media (max-width: 900px){
+    
+    .hobbies-container{
+        width: 80%;
+    }
+
+    .hobby{
+        width: 100%;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding-top: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .hobby-img-coding{
+        align-self: center;
+        float: none;
+        margin: 0;
+    }
+
+    .hobby-img-gaming{
+        align-self: center;
+        float: none;
+        margin: 0;
+    }
+
 }
 
 
@@ -293,6 +340,14 @@ section {
 
     .bio{
         width: 80%;
+    }
+
+    .hobby-img-coding{
+        height: 9rem;
+    }
+
+    .hobby-img-gaming{
+        height: 11rem;
     }
 }
 
