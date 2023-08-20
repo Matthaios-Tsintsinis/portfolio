@@ -1,0 +1,272 @@
+body {
+    background-color: #fff;
+    background-image:
+    linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+    linear-gradient(#eee .1em, transparent .1em);
+    background-size: 100% 1.2em;
+  }
+
+
+section {
+    margin-bottom: 100px;
+}
+
+#header {
+    background-color: #616162;
+    padding-top: 30px;
+    padding-bottom: 30px
+}
+
+.header {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    color: #00ADB5;
+    margin-bottom: 50px;
+}
+
+.my-photo {
+    float: left;
+    object-fit: cover;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+}
+
+.info-container {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F3F5;
+    padding: 20px 0 20px 0;
+    width: 40%;
+    border-radius: 2rem;
+}
+
+.name{
+    padding-top: 25px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.info-header {
+    display: inline;
+}
+
+.info-par{
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.bio {
+    text-align: center;
+}
+
+.bio-span {
+    font-weight: bold;
+}
+
+
+
+
+.edu-cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+}
+
+.edu-card {
+    background-color: #EEEEEE;
+    justify-content: center;
+    padding: 1rem 2.5rem 1rem 2.5rem;
+    border-radius: 20px;
+}
+
+
+
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+}
+
+.skills-cards-container{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.skills-card {
+    margin-bottom: 40px;
+    border: solid 2px;
+    padding: 2rem
+}
+
+.skill-header {
+    padding-bottom: 1rem;
+}
+
+.skill-images-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill-img {
+    object-fit:scale-down;
+    margin-top: 0.5rem;
+    margin-left: 3rem;
+    height: 8rem;
+    width: 8rem;
+}
+
+
+
+.carousel-caption {
+    bottom: 40px;
+}
+
+.car-title{
+    color: black;
+}
+
+.car-desc{
+    color: grey;
+}
+
+
+
+#hobbies {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hobby {
+    width: 50%;
+    margin-bottom: 2rem;
+}
+
+.hobby-img-coding {
+    float: left;
+    height: 13rem;
+    margin-right: 4rem;
+}
+
+.hobby-img-gaming {
+    float: right;
+    height: 18rem;
+    margin-left: 1.5rem;
+}
+
+.hobby-header {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
+
+.hobby-paragraph {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: rgb(92, 92, 92)
+}
+
+
+
+#contact{
+    margin-bottom: 2rem;
+}
+
+
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.contact-row{
+    text-decoration: none;
+}
+
+.contact-icon{
+    background-color: #EEEEEE;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.contact-info{
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+
+
+#footer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.footer-text{
+    font-size: 1.3rem;
+}
+
+
+@media (max-width: 1200px) {
+    .my-photo {
+        float: none;
+        height: 150px;
+        width: 150px;
+        margin: 0;
+    }
+
+    .name {
+        font-size: 1.5rem;
+    }
+
+    .info-container{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .info-list {
+        list-style-type: none;
+        padding: 0;
+    }
+}
+
+
+@media (max-width: 1100px) {
+    .edu-cards-container{
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .bio {
+        width: 90%;
+        margin-left: 10%;
+    }
+}
