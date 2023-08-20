@@ -1,7 +1,7 @@
 body {
     background-color: #fff;
     background-image:
-    linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+
     linear-gradient(#eee .1em, transparent .1em);
     background-size: 100% 1.2em;
   }
@@ -117,17 +117,22 @@ section {
 .skill-images-container{
     display: flex;
     flex-wrap: wrap;
+    gap: 3rem;
 }
 
 .skill-img {
     object-fit:scale-down;
     margin-top: 0.5rem;
-    margin-left: 3rem;
     height: 8rem;
     width: 8rem;
 }
 
 
+
+.projects-container{
+    display: flex;
+    justify-content: center;
+}
 
 .carousel-caption {
     bottom: 40px;
@@ -187,13 +192,17 @@ section {
     margin-bottom: 2rem;
 }
 
+.flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .contact-container{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: start;
     gap: 1.5rem;
 }
 
@@ -227,7 +236,7 @@ section {
 }
 
 .footer-text{
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 
@@ -265,8 +274,49 @@ section {
         width: 100%;
     }
 
-    .bio {
-        width: 90%;
-        margin-left: 10%;
+    #bio{
+        display: flex;
+        justify-content: center;
     }
+
+    .bio {
+        text-align: center;
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 700px){
+    .info-container{
+        width: 80%;
+    }
+
+    .bio{
+        width: 80%;
+    }
+}
+
+@media (max-width: 530px){
+    .skill-images-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-row{
+        display: flex;
+        justify-content: start;
+    }
+
+    .contact-icon{
+        display: flex;
+    }
+}
+
+@media (max-width: 380px){
+    .contact-row{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    } 
 }
